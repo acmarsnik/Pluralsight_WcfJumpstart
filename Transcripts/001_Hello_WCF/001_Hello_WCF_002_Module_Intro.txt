@@ -1,0 +1,3 @@
+Module Intro
+
+So in this first module, Hello WCF, what we're going to cover first is some of the fundamentals of WCF, a broad overview of what it's about, and what the key aspects of WCF are for building distributed applications. Then we're going to get into the building blocks, the individual code constructs that you'll be creating to build out a WCF service, and connect to it from clients. The we'll finish off the module with a couple of demos that we'll walk you through quickly using Visual Studio to define services, host those services, and connect to them from clients. And you'll see the end to end demo that we'll be building up throughout the rest of the course, and see what its overall solution looks like. So let's dive right in. 
