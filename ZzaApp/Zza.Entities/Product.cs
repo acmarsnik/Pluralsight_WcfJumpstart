@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Zza.Entities
 {
+    [DataContract]
     public class Product
     {
         [DataMember]
