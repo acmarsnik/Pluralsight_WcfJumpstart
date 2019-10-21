@@ -24,5 +24,12 @@ namespace HelloWCFClient
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ServiceReference1.Service1Client proxy = new ServiceReference1.Service1Client();
+            string msg = proxy.GetData(42);
+            MessageBox.Show(msg);
+        }
     }
 }
