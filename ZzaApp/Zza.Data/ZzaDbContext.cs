@@ -26,6 +26,8 @@ namespace Zza.Data
             modelBuilder.Entity<Customer>()
                 .Property(c => c.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+
+            modelBuilder.Entity<Customer>().Ignore(c => c.FullName);
         }
     }
 }

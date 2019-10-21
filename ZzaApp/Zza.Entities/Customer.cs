@@ -27,5 +27,8 @@ namespace Zza.Entities
         public string State { get; set; }
         [DataMember]
         public string Zip { get; set; }
+        // Need to have set block or will get obscure error during serialization
+        [DataMember]
+        public string FullName { get { return string.Format("{0} {1}", FirstName, LastName); } set { } }
     }
 }
