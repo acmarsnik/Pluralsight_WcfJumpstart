@@ -27,7 +27,7 @@ namespace Zza.Service
         {
             return _Context.Products.ToList();
         }
-
+        [OperationBehavior(TransactionScopeRequired = true)]
         public void SubmitOrder(Order order)
         {
             _Context.Orders.Add(order);
