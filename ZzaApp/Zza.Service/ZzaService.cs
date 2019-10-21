@@ -7,9 +7,15 @@ using Zza.Entities;
 
 namespace Zza.Service
 {
-    public class ZzaService : IZzaService
+    public class ZzaService : IZzaService, IDisposable
     {
         readonly ZzaDbContext _Context = new ZzaDbContext();
+
+        public void Dispose()
+        {
+            _Context.Dispose();
+        }
+
         public List<Customer> GetCustomers()
         {
             return _Context.Customers.ToList();
