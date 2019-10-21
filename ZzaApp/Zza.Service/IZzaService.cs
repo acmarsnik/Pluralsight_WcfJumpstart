@@ -10,5 +10,11 @@ namespace Zza.Service
     [ServiceContract]
     public interface IZzaService
     {
+        [OperationContract]
+        List<Product> GetProducts();
+        [OperationContract]
+        List<Customer> GetCustomers();
+        [OperationContract]
+        void SubmitOrder(Order order);
     }
 }
