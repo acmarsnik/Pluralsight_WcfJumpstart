@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace Zza.Data
 
             modelBuilder.Entity<Customer>()
                 .Property(c => c.Id)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedAttributeConvention);
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
         }
     }
 }
