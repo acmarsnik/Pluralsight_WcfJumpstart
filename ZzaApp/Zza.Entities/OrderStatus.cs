@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Zza.Entities
 {
-    class Class1
+    public class OrderStatus
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
