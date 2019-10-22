@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zza.Service", "Zza.Service\Zza.Service.csproj", "{8066F143-B4A3-4110-94A3-2E011B99DEA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zza.Services", "Zza.Service\Zza.Services.csproj", "{8066F143-B4A3-4110-94A3-2E011B99DEA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zza.Data", "Zza.Data\Zza.Data.csproj", "{995B2CC8-7E86-412B-9B5E-C992636E77A8}"
 EndProject
