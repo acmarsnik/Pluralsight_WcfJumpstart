@@ -105,6 +105,7 @@ namespace Zza.Client
             if (_CurrentOrder.CustomerId != Guid.Empty && _CurrentOrder.OrderItems.Count > 0)
             {
                 ZzaServiceClient proxy = new ZzaServiceClient("NetTcpBinding_IZzaService");
+
                 try
                 {
                     proxy.SubmitOrder(_CurrentOrder);
