@@ -6,7 +6,7 @@ using System.Web;
 using Zza.Data;
 using Zza.Entities;
 
-namespace Zza.Service
+namespace Zza.Services
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
     public class ZzaService : IZzaService, IDisposable
