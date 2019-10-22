@@ -79,15 +79,15 @@ namespace Zza.Client
 
         }
 
-        private void LoadProductsAndCustomers()
+        private async void LoadProductsAndCustomers()
         {
             ZzaProxy proxy = new ZzaProxy("NetTcpBinding_IZzaService");
             //ZzaServiceClient proxy = new ZzaServiceClient("NetTcpBinding_IZzaService");
             try
             {
-                Products = proxy.GetProducts();
-                Customers = proxy.GetCustomers();
-
+                Products = await proxy.GetProductsAsync();
+                Customers = await proxy.GetCustomersAsync();
+                proxy.Close();
             }
             catch (Exception ex)
             {
