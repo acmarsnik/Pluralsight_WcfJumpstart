@@ -115,7 +115,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>62700</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62700/</IISUrl>
+          <IISUrl>http://localhost:2112/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
