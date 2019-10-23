@@ -14,6 +14,8 @@ namespace Zza.Constants
         public const string Everyone = "S-1-1-0";
         public const string AuthenticatedUser = "S-1-5-11";
         public const string Admin = "S-1-5-32-544";
+        public const string GroupType = "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid";
+
 
         public static List<string> GetRoleValues(IPrincipal principal)
         {
@@ -38,6 +40,12 @@ namespace Zza.Constants
                  */
                 Debug.WriteLine("Role SID value: " + role);
             }
+        }
+
+        public static bool HasAdminClaim()
+        {
+            bool hasAdminClaim = ClaimsPrincipal.Current.HasClaim(GroupType, Admin);
+            return hasAdminClaim;
         }
     }
 }
