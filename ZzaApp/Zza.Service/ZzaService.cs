@@ -32,6 +32,7 @@ namespace Zza.Services
         }
 
         //[PrincipalPermission(SecurityAction.Demand, Role = "BUILTIN\\Administrators")]
+        //[PrincipalPermission(SecurityAction.Demand, Role = Sids.Everyone)]
         [PrincipalPermission(SecurityAction.Demand, Role = Sids.Admin)]
         public List<Product> GetProducts()
         {
@@ -40,6 +41,7 @@ namespace Zza.Services
             //Sids.DebugLogAllSidRoleValuesForUser(principal);
 
             //if (!principal.IsInRole("BUILTIN\\Administrators"))
+            //if (!principal.IsInRole(Sids.Everyone))
             //if (!principal.IsInRole(Sids.Admin))
             //{
             //    throw new SecurityException("AccessDenied");

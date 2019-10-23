@@ -82,6 +82,9 @@ namespace Zza.Client
         private async void LoadProductsAndCustomers()
         {
             ZzaProxy proxy = new ZzaProxy("NetTcpBinding_IZzaService");
+            //proxy.ClientCredentials.Windows.ClientCredential.UserName = "ServerName\\Username";
+            //proxy.ClientCredentials.Windows.ClientCredential.Password = "password";
+
             //ZzaServiceClient proxy = new ZzaServiceClient("NetTcpBinding_IZzaService");
             try
             {
