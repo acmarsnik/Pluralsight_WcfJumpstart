@@ -35,8 +35,8 @@ namespace Zza.Services
         [PrincipalPermission(SecurityAction.Demand, Role = Sids.Admin)]
         public List<Product> GetProducts()
         {
-            IPrincipal principal = Thread.CurrentPrincipal;
-            Sids.DebugLogAllSidRoleValuesForUser(principal);
+            //IPrincipal principal = Thread.CurrentPrincipal;
+            //Sids.DebugLogAllSidRoleValuesForUser(principal);
 
             //if (!principal.IsInRole("BUILTIN\\Administrators"))
             //if (!principal.IsInRole(Sids.Admin))
