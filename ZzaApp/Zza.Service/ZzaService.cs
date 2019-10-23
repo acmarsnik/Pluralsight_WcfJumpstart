@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.Threading;
 using System.Web;
 using Zza.Data;
 using Zza.Entities;
@@ -25,6 +26,7 @@ namespace Zza.Services
 
         public List<Product> GetProducts()
         {
+            var principal = Thread.CurrentPrincipal;
             return _Context.Products.ToList();
         }
         [OperationBehavior(TransactionScopeRequired = true)]
