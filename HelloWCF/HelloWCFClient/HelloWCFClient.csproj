@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CEC271A-414F-4A5C-9AF0-915296B0DAFC}</ProjectGuid>
+    <ProjectGuid>{359734BD-D37E-47F1-83B4-89D9E0D724B0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>HelloWCFClient</RootNamespace>
     <AssemblyName>HelloWCFClient</AssemblyName>
@@ -93,17 +93,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\ServiceReference1\HelloWCF.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\ServiceReference1\HelloWCFClient.ServiceReference1.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReference1\service.wsdl" />
-    <None Include="Connected Services\ServiceReference1\service.xsd">
+    <None Include="Connected Services\ServiceReference1\Service1.wsdl" />
+    <None Include="Connected Services\ServiceReference1\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\service1.xsd">
+    <None Include="Connected Services\ServiceReference1\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -119,6 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Service1.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
