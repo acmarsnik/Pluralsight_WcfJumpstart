@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security;
+using System.Security.Claims;
+using System.Security.Permissions;
+using System.Security.Principal;
 using System.ServiceModel;
 using System.Threading;
 using System.Web;
+using System.Web.Security;
+using Zza.Constants;
 using Zza.Data;
 using Zza.Entities;
 
@@ -25,14 +31,18 @@ namespace Zza.Services
             return _Context.Customers.ToList();
         }
 
+        //[PrincipalPermission(SecurityAction.Demand, Role = "BUILTIN\\Administrators")]
+        [PrincipalPermission(SecurityAction.Demand, Role = Sids.Admin)]
         public List<Product> GetProducts()
         {
-            var principal = Thread.CurrentPrincipal;
+            IPrincipal principal = Thread.CurrentPrincipal;
+            Sids.DebugLogAllSidRoleValuesForUser(principal);
 
-            if (!principal.IsInRole("BUILTIN\\Administrators"))
-            {
-                throw new SecurityException("AccessDenied");
-            }
+            //if (!principal.IsInRole("BUILTIN\\Administrators"))
+            //if (!principal.IsInRole(Sids.Admin))
+            //{
+            //    throw new SecurityException("AccessDenied");
+            //}
 
             return _Context.Products.ToList();
         }

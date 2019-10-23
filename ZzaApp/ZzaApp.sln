@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zza.Client", "Zza.Client\Zz
 		{19762795-F99C-449A-AB7F-545225188E8E} = {19762795-F99C-449A-AB7F-545225188E8E}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zza.Constants", "Zza.Constants\Zza.Constants.csproj", "{996DCA0C-D66F-4C29-A7D0-24148E760FE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{303C500B-8C21-40EE-A8E0-C3C3D9A5AC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{303C500B-8C21-40EE-A8E0-C3C3D9A5AC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{303C500B-8C21-40EE-A8E0-C3C3D9A5AC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996DCA0C-D66F-4C29-A7D0-24148E760FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996DCA0C-D66F-4C29-A7D0-24148E760FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996DCA0C-D66F-4C29-A7D0-24148E760FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996DCA0C-D66F-4C29-A7D0-24148E760FE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

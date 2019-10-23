@@ -91,6 +91,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Zza.Constants\Zza.Constants.csproj">
+      <Project>{996DCA0C-D66F-4C29-A7D0-24148E760FE1}</Project>
+      <Name>Zza.Constants</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Zza.Data\Zza.Data.csproj">
       <Project>{995B2CC8-7E86-412B-9B5E-C992636E77A8}</Project>
       <Name>Zza.Data</Name>
